@@ -1,5 +1,11 @@
+# Visual Studio
 .vs/
+
+# .NET build artifacts
 bin/
 obj/
-ucl.db
+
+# SQLite databases
 *.db
+*.db-shm
+*.db-wal
