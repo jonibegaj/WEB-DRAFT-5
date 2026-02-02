@@ -36,8 +36,8 @@ using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<UclDbContext>();
 
-    context.Database.EnsureCreated(); // ✅ creates SQLite file + tables
-    DataSeeder.Seed(context);         // ✅ inserts clubs, players, leaderboard
+    context.Database.EnsureCreated(); 
+    DataSeeder.Seed(context);         
 }
 
 
